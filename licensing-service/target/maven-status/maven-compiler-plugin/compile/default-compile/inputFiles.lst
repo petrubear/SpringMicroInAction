@@ -1,0 +1,8 @@
+/Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationRestTemplateClient.java
+/Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/licensing-service/src/main/java/com/thoughtmechanix/licenses/Application.java
+/Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/licensing-service/src/main/java/com/thoughtmechanix/licenses/model/License.java
+/Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/licensing-service/src/main/java/com/thoughtmechanix/licenses/controllers/LicenseServiceController.java
+/Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/licensing-service/src/main/java/com/thoughtmechanix/licenses/repository/LicenseRepository.java
+/Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/licensing-service/src/main/java/com/thoughtmechanix/licenses/config/ServiceConfig.java
+/Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/licensing-service/src/main/java/com/thoughtmechanix/licenses/model/Organization.java
+/Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/licensing-service/src/main/java/com/thoughtmechanix/licenses/services/LicenseService.java
