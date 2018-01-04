@@ -1,7 +1,7 @@
 example.organization.property: "I AM THE DEFAULT ORGANIZATION SERVICE"
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform:  "postgres"
-spring.jpa.show-sql: "true"
+spring.jpa.show-sql: "false"
 spring.database.driverClassName: "org.postgresql.Driver"
 spring.datasource.url: "jdbc:postgresql://localhost:5432/eagle_eye_local"
 spring.datasource.username: "postgres"
