@@ -37,5 +37,16 @@ spring:
      config:
        server:
            native:
-              searchLocations: file:///Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/confsvr/src/main/resources/config/licensingservice,
-                               file:///Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/confsvr/src/main/resources/config/organizationservice
+              searchLocations: file:///Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/confsvr/src/main/resources/config/authenticationservice,
+                               file:///Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/confsvr/src/main/resources/config/licensingservice,
+                               file:///Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/confsvr/src/main/resources/config/organizationservice,
+                               file:///Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/confsvr/src/main/resources/config/specialrouteservice,
+                               file:///Users/edison/Documents/Projects/IntelliJ/SpringMicroInAction/confsvr/src/main/resources/config/zuulservice
+
+
+#Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.thoughtmechanix: DEBUG
