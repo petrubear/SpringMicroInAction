@@ -26,7 +26,6 @@ public class TrackingFilter extends ZuulFilter {
         return FILTER_ORDER;
     }
 
-    @Override
     public boolean shouldFilter() {
         return SHOULD_FILTER;
     }
@@ -39,12 +38,16 @@ public class TrackingFilter extends ZuulFilter {
         return false;
     }
 
-    @Override
+    private String generateCorrelationId(){
+        return java.util.UUID.randomUUID().toString();
+    }
+
     public Object run() {
 
         if (isCorrelationIdPresent()) {
             logger.debug("tmx-correlation-id found in tracking filter: {}. ", filterUtils.getCorrelationId());
-        } else {
+        }
+        else{
             filterUtils.setCorrelationId(generateCorrelationId());
             logger.debug("tmx-correlation-id generated in tracking filter: {}.", filterUtils.getCorrelationId());
         }
@@ -53,9 +56,4 @@ public class TrackingFilter extends ZuulFilter {
         logger.debug("Processing incoming request for {}.", ctx.getRequest().getRequestURI());
         return null;
     }
-
-    private String generateCorrelationId() {
-        return java.util.UUID.randomUUID().toString();
-    }
-
 }

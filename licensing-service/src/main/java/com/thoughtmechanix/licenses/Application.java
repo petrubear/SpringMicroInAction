@@ -20,7 +20,7 @@ import java.util.List;
 public class Application {
     @LoadBalanced
     @Bean
-    public RestTemplate restTemplate() {
+    public RestTemplate getRestTemplate(){
         RestTemplate template = new RestTemplate();
         List interceptors = template.getInterceptors();
         if (interceptors == null) {
